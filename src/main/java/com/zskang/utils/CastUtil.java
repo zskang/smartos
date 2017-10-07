@@ -1,7 +1,5 @@
 package com.zskang.utils;
 
-import org.apache.commons.lang3.StringUtils;
-
 public class CastUtil {
     public static String caseString(Object obj) {
         return CastUtil.caseString(obj, "");
@@ -19,7 +17,7 @@ public class CastUtil {
         double doubleValue = defaultValue;
         if (obj != null) {
             String strValue = caseString(obj);
-            if (StringUtils.isNoneEmpty(strValue)) {
+            if (StringUtil.isNotEmpty(strValue)) {
                 try {
                     doubleValue = Double.parseDouble(strValue);
                 } catch (NumberFormatException e) {
@@ -38,7 +36,7 @@ public class CastUtil {
         long doubleValue = defaultValue;
         if (obj != null) {
             String strValue = caseString(obj);
-            if (StringUtils.isNoneEmpty(strValue)) {
+            if (StringUtil.isNotEmpty(strValue)) {
                 try {
                     doubleValue = Long.parseLong(strValue);
                 } catch (NumberFormatException e) {
@@ -57,7 +55,7 @@ public class CastUtil {
         int doubleValue = defaultValue;
         if (obj != null) {
             String strValue = caseString(obj);
-            if (StringUtils.isNoneEmpty(strValue)) {
+            if (StringUtil.isNotEmpty(strValue)) {
                 try {
                     doubleValue = Integer.parseInt(strValue);
                 } catch (NumberFormatException e) {
@@ -76,7 +74,7 @@ public class CastUtil {
         boolean doubleValue = defaultValue;
         if (obj != null) {
             String strValue = caseString(obj);
-            if (StringUtils.isNoneEmpty(strValue)) {
+            if (StringUtil.isNotEmpty(strValue)) {
                 try {
                     doubleValue = Boolean.parseBoolean(strValue);
                 } catch (NumberFormatException e) {
