@@ -63,4 +63,16 @@ public class CustomerVO implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "CustomerVO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", contact='" + contact + '\'' +
+                ", telphone='" + telphone + '\'' +
+                ", remark='" + remark + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
