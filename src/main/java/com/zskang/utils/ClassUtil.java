@@ -17,6 +17,7 @@ import java.util.jar.JarFile;
 public final class ClassUtil {
     private static final Logger LOGGER = LoggerFactory.getLogger(ClassUtil.class);
 
+
     public static ClassLoader getClassLoader() {
         return Thread.currentThread().getContextClassLoader();
     }
